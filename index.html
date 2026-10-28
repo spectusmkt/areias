@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pousada Areias do Peró · a 500 m da Praia do Peró · Cabo Frio – RJ</title>
+<meta name="description" content="Pousada Areias do Peró: refúgio acolhedor a 500 metros da Praia do Peró, em Cabo Frio – RJ. Café da manhã incluso, estacionamento gratuito, pet friendly e atendimento familiar. Reserve pelo WhatsApp.">
+<meta property="og:title" content="Pousada Areias do Peró · Cabo Frio – RJ">
+<meta property="og:description" content="Um refúgio acolhedor a 500 metros da Praia do Peró. Café da manhã incluso, estacionamento gratuito e pet friendly.">
+<meta property="og:image" content="imagens/fachada.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#00669e">
+<link rel="icon" type="image/png" href="imagens/icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Julius+Sans+One&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "Pousada Areias do Peró",
+  "image": "imagens/fachada.jpg",
+  "telephone": "+55 22 2041-4623",
+  "email": "contato@areiasdopero.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Olívia Lopes, 14 B – Peró",
+    "addressLocality": "Cabo Frio",
+    "addressRegion": "RJ",
+    "postalCode": "28922-332",
+    "addressCountry": "BR"
+  },
+  "petsAllowed": true,
+  "sameAs": ["https://www.instagram.com/areiasdoperooficial/", "https://www.facebook.com/areiasdopero/"]
+}
+</script>
+<style>
+:root{
+  --azul:#00669e;
+  --azul-escuro:#0b3d5e;
+  --azul-claro:#e8f1f7;
+  --areia:#f6f0e6;
+  --texto:#3a3a3a;
+  --texto-suave:#6b6b6b;
+  --branco:#fff;
+  --whats:#25d366;
+  --titulo:"Julius Sans One",sans-serif;
+  --serif:"Forum",serif;
+  --corpo:"Raleway",sans-serif;
+  --max:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:var(--corpo);color:var(--texto);background:var(--branco);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.olho{font-family:var(--corpo);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);margin:0 0 10px}
+.titulo{font-family:var(--titulo);font-weight:400;text-transform:uppercase;letter-spacing:.04em;color:var(--texto);font-size:clamp(26px,3.4vw,38px);line-height:1.2;margin:0 0 24px}
+.titulo-linha{display:flex;align-items:center;gap:24px}
+.titulo-linha::after{content:"";flex:1;height:1px;background:var(--azul);opacity:.5}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--corpo);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:16px 30px;border:0;border-radius:2px;cursor:pointer;transition:background .2s,transform .2s,color .2s}
+.btn-azul{background:var(--azul);color:var(--branco)}
+.btn-azul:hover{background:var(--azul-escuro)}
+.btn-branco{background:var(--branco);color:var(--azul)}
+.btn-branco:hover{background:var(--areia)}
+.btn-contorno{background:transparent;color:var(--branco);box-shadow:inset 0 0 0 1px rgba(255,255,255,.8)}
+.btn-contorno:hover{background:var(--branco);color:var(--azul)}
+.nota{font-family:var(--titulo);text-transform:uppercase;font-size:12px;letter-spacing:.08em;color:var(--texto-suave);margin-top:14px}
+section{position:relative}
+
+/* ---------- topo ---------- */
+.topo{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;max-width:1360px}
+.topo .logo img{height:46px;width:auto;transition:height .3s}
+.topo .logo .logo-azul{display:none}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--branco);opacity:.92}
+.menu a:hover{opacity:1}
+.topo .btn{padding:12px 22px;font-size:12px}
+.topo.solido{background:var(--branco);box-shadow:0 2px 18px rgba(0,0,0,.08)}
+.topo.solido .wrap{height:70px}
+.topo.solido .logo img{height:38px}
+.topo.solido .logo .logo-branco{display:none}
+.topo.solido .logo .logo-azul{display:block}
+.topo.solido .menu a:not(.btn){color:var(--texto)}
+.abre-menu{display:none;background:none;border:0;width:44px;height:44px;padding:10px;cursor:pointer}
+.abre-menu span{display:block;height:2px;background:var(--branco);margin:5px 0;transition:transform .3s,opacity .3s}
+.topo.solido .abre-menu span{background:var(--texto)}
+
+/* ---------- hero ---------- */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;color:var(--branco);background:#1d2a33 url(imagens/fachada.jpg) center 40%/cover no-repeat;padding:120px 0 170px}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,30,48,.55) 0%,rgba(6,30,48,.25) 45%,rgba(6,30,48,.6) 100%)}
+.hero .wrap{position:relative;text-align:center}
+.hero .local{font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 18px}
+.hero h1{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:clamp(32px,5.2vw,64px);line-height:1.12;letter-spacing:.03em;margin:0 auto 22px;max-width:19ch}
+.hero .sub{font-family:var(--serif);font-size:clamp(19px,2vw,24px);margin:0 auto;max-width:34ch;opacity:.95}
+
+/* ---------- barra de reserva ---------- */
+.reserva{position:relative;z-index:5;margin-top:-90px}
+.reserva form{background:var(--branco);box-shadow:0 18px 50px rgba(11,61,94,.18);display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr auto;align-items:stretch}
+.reserva .chamada{display:flex;flex-direction:column;justify-content:center;padding:22px 26px;border-right:1px solid #e6e6e6}
+.reserva .chamada strong{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:18px;color:var(--azul);line-height:1.2}
+.reserva .chamada span{font-family:var(--serif);font-size:16px;color:var(--texto-suave)}
+.reserva label{display:flex;flex-direction:column;justify-content:center;padding:18px 22px;border-right:1px solid #e6e6e6;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul)}
+.reserva input,.reserva select{font-family:var(--serif);font-size:19px;color:var(--texto);border:0;background:transparent;padding:6px 0 0;width:100%;outline:none;appearance:none;-webkit-appearance:none}
+.reserva select{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2300669e' stroke-width='1.6'/%3E%3C/svg%3E") right 2px center no-repeat;padding-right:20px;cursor:pointer}
+.reserva .btn{border-radius:0;padding:0 34px;font-size:13px}
+
+/* ---------- a pousada ---------- */
+.pousada{padding:120px 0 100px}
+.pousada .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+.pousada p{margin:0 0 18px;color:var(--texto-suave)}
+.pousada .btn{margin-top:14px}
+.mosaico{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:200px 150px 200px;gap:10px}
+.mosaico img{width:100%;height:100%;object-fit:cover}
+.mosaico img:nth-child(1){grid-row:1/3}
+.mosaico img:nth-child(4){grid-column:1/2}
+
+/* ---------- destaques ---------- */
+.destaques{padding:40px 0 0;text-align:center}
+.destaques .titulo{margin-bottom:48px}
+.destaques .ondas{position:absolute;left:4%;top:0;width:120px;opacity:.25}
+.blocos{display:grid;grid-template-columns:repeat(4,1fr)}
+.bloco{position:relative;aspect-ratio:3/3.4;overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--branco);text-decoration:none}
+.bloco img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.bloco::after{content:"";position:absolute;inset:0;background:rgba(11,61,94,.5);transition:background .4s}
+.bloco:hover img{transform:scale(1.06)}
+.bloco:hover::after{background:rgba(11,61,94,.35)}
+.bloco h3{position:relative;z-index:1;font-family:var(--serif);font-weight:400;font-size:clamp(22px,2vw,28px);line-height:1.2;margin:0;padding:0 20px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+
+/* ---------- conforto ---------- */
+.conforto{padding:70px 0}
+.conforto .wrap{display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:center}
+.conforto .titulo{font-size:24px;margin:0}
+.itens{display:grid;grid-template-columns:repeat(6,1fr)}
+.item{text-align:center;padding:6px 10px;border-left:1px solid #dcdcdc;font-size:13px;line-height:1.4;color:var(--texto-suave)}
+.item:first-child{border-left:0}
+.item svg{width:30px;height:30px;stroke:var(--azul);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 10px;display:block}
+
+/* ---------- acomodações ---------- */
+.acomodacoes{padding:90px 0 110px;background:var(--azul-claro)}
+.acomodacoes .intro{max-width:640px;color:var(--texto-suave);margin:-6px 0 44px}
+.suites{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.suite{background:var(--branco);display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(11,61,94,.07)}
+.suite .foto{position:relative;aspect-ratio:4/3.3;overflow:hidden}
+.suite .foto img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.suite:hover .foto img{transform:scale(1.05)}
+.suite .pessoas{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);color:var(--azul);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px}
+.suite .corpo{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.suite h3{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:23px;letter-spacing:.05em;margin:0 0 8px;color:var(--texto)}
+.suite p{margin:0 0 16px;color:var(--texto-suave);font-size:15px}
+.suite ul{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-wrap:wrap;gap:6px 0;font-size:13px;color:var(--texto-suave)}
+.suite li:not(:last-child)::after{content:"|";margin:0 10px;color:#c9c9c9}
+.suite .btn{margin-top:auto;align-self:flex-start}
+
+/* ---------- serviços ---------- */
+.servicos{padding:110px 0 90px}
+.servicos-grade{display:grid;grid-template-columns:repeat(6,1fr);gap:24px}
+.servico{grid-column:span 2;display:flex;flex-direction:column}
+.servico:nth-child(4){grid-column:2/span 2}
+.servico img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.servico .corpo{padding:24px 4px 0}
+.servico h3{font-family:var(--serif);font-weight:400;font-size:26px;color:var(--azul);margin:0 0 8px;line-height:1.2}
+.servico p{margin:0;color:var(--texto-suave);font-size:15px}
+
+/* ---------- onde estamos ---------- */
+.onde{padding:40px 0 120px}
+.onde .caixa{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;max-width:1280px;margin:0 auto}
+.onde .texto{background:var(--branco);padding:64px 56px;box-shadow:0 18px 50px rgba(11,61,94,.12);margin:60px -60px 60px 24px;position:relative;z-index:1;text-align:center}
+.onde .texto p{color:var(--texto-suave);text-align:left;margin:0 0 16px}
+.onde .texto .btn{margin-top:14px}
+.onde .mapa{min-height:520px;background:var(--azul-claro)}
+.onde iframe{width:100%;height:100%;min-height:520px;border:0;display:block}
+.endereco{font-weight:600;color:var(--texto)!important;text-align:center!important}
+
+/* ---------- atrações ---------- */
+.atracoes{padding:100px 0;background:var(--areia)}
+.atracoes-grade{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.atracao{background:var(--branco);display:flex;flex-direction:column}
+.atracao img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.atracao .corpo{padding:22px 22px 26px}
+.atracao h3{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:18px;letter-spacing:.05em;margin:0 0 10px}
+.atracao p{margin:0;font-size:14.5px;color:var(--texto-suave)}
+
+/* ---------- galeria ---------- */
+.galeria{padding:100px 0 90px}
+.galeria .titulo-linha{flex-direction:row-reverse}
+.fotos{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.fotos a{display:block;overflow:hidden;aspect-ratio:1/1.15}
+.fotos img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.fotos a:hover img{transform:scale(1.06)}
+.insta{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:28px;font-weight:600;letter-spacing:.3em;font-size:13px;color:var(--azul);text-decoration:none}
+.insta svg{width:22px;height:22px}
+
+/* ---------- chamada ---------- */
+.chamada-reserva{padding:120px 0;color:var(--branco);text-align:center;background:#1d2a33 url(imagens/noite-arcos.jpg) center/cover no-repeat}
+.chamada-reserva::before{content:"";position:absolute;inset:0;background:rgba(6,30,48,.62)}
+.chamada-reserva .wrap{position:relative}
+.chamada-reserva h2{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:clamp(26px,3.6vw,40px);line-height:1.2;margin:0 auto 14px;max-width:22ch}
+.chamada-reserva p{font-family:var(--serif);font-size:21px;margin:0 0 32px}
+
+/* ---------- depoimentos ---------- */
+.depoimentos{padding:110px 0 100px;text-align:center;overflow:hidden}
+.carrossel{position:relative;margin-top:30px;overflow:hidden}
+.trilho{display:flex;transition:transform .6s ease}
+.depo{flex:0 0 33.333%;margin:0;padding:0 26px}
+.depo .fonte{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--azul);border:1px solid var(--azul);padding:5px 12px;margin-bottom:18px}
+.depo blockquote{margin:0 0 16px;color:var(--texto-suave);font-size:15px;line-height:1.75}
+.depo .estrelas{color:#f2b01e;letter-spacing:4px;font-size:16px;margin-bottom:6px}
+.depo cite{font-style:normal;font-weight:700;color:var(--azul);font-size:14px}
+.setas{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:36px}
+.setas button{width:44px;height:44px;border-radius:50%;border:1px solid var(--azul);background:transparent;color:var(--azul);cursor:pointer;font-size:18px;transition:background .2s,color .2s}
+.setas button:hover{background:var(--azul);color:var(--branco)}
+.pontos{display:flex;gap:8px}
+.pontos button{width:8px;height:8px;border-radius:50%;padding:0;border:0;background:#c9d6df;cursor:pointer}
+.pontos button.ativo{background:var(--azul)}
+
+/* ---------- rodapé ---------- */
+.rodape{background:var(--azul);color:var(--branco);padding:70px 0 0}
+.rodape .grade{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:50px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.2)}
+.rodape img{height:64px;width:auto;margin-bottom:18px}
+.rodape p{margin:0;font-size:14.5px;opacity:.9}
+.rodape h4{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:6px 0 18px}
+.rodape ul{list-style:none;margin:0;padding:0;font-size:14.5px}
+.rodape li{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
+.rodape li svg{flex:0 0 18px;width:18px;height:18px;margin-top:3px}
+.rodape a{text-decoration:none;opacity:.9}
+.rodape a:hover{opacity:1;text-decoration:underline}
+.redes{display:flex;gap:12px;margin-top:20px}
+.redes a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;opacity:1}
+.redes a:hover{background:var(--branco);color:var(--azul);text-decoration:none}
+.redes svg{width:18px;height:18px}
+.direitos{text-align:center;font-size:12.5px;padding:22px 0;opacity:.8}
+
+/* ---------- whatsapp flutuante ---------- */
+.whats-flutuante{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--whats);color:var(--branco);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .2s}
+.whats-flutuante:hover{transform:scale(1.08)}
+.whats-flutuante svg{width:32px;height:32px}
+
+/* ---------- animação de entrada ---------- */
+.surge{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.surge.visivel{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.surge{opacity:1;transform:none}.trilho{transition:none}}
+
+/* ---------- responsivo ---------- */
+@media (max-width:1080px){
+  .menu{gap:20px}
+  .reserva form{grid-template-columns:1fr 1fr 1fr}
+  .reserva .chamada{grid-column:1/-1;border-right:0;border-bottom:1px solid #e6e6e6;flex-direction:row;align-items:baseline;gap:12px;padding:16px 22px}
+  .reserva .btn{grid-column:1/-1;padding:18px}
+  .reserva label:nth-of-type(3){border-right:0}
+  .conforto .wrap{grid-template-columns:1fr;text-align:center}
+  .itens{grid-template-columns:repeat(3,1fr);row-gap:26px}
+  .item:nth-child(4){border-left:0}
+  .atracoes-grade{grid-template-columns:repeat(2,1fr)}
+  .depo{flex-basis:50%}
+}
+@media (max-width:900px){
+  .abre-menu{display:block}
+  .menu{position:fixed;inset:0;background:var(--azul-escuro);flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:transform .35s}
+  .menu a,.topo.solido .menu a:not(.btn){color:var(--branco);font-size:15px}
+  .menu-aberto .menu{transform:none}
+  .menu-aberto .abre-menu{position:relative;z-index:2}
+  .menu-aberto .abre-menu span{background:var(--branco)!important}
+  .menu-aberto .abre-menu span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .menu-aberto .abre-menu span:nth-child(2){opacity:0}
+  .menu-aberto .abre-menu span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .pousada .wrap{grid-template-columns:1fr;gap:44px}
+  .blocos{grid-template-columns:repeat(2,1fr)}
+  .suites{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+  .servicos-grade{grid-template-columns:1fr 1fr}
+  .servico,.servico:nth-child(4){grid-column:auto}
+  .servico:nth-child(5){grid-column:1/-1;max-width:calc(50% - 12px);justify-self:center}
+  .onde .caixa{grid-template-columns:1fr}
+  .onde .texto{margin:0 24px -40px;padding:48px 32px}
+  .onde .mapa,.onde iframe{min-height:380px}
+  .fotos{grid-template-columns:repeat(2,1fr)}
+  .rodape .grade{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 16px}
+  .hero{padding:110px 0 150px}
+  .reserva{margin-top:-80px}
+  .reserva form{grid-template-columns:1fr 1fr}
+  .reserva .chamada{flex-direction:column;gap:0}
+  .reserva label{padding:14px 18px}
+  .reserva label:nth-of-type(2){border-right:0}
+  .reserva label:nth-of-type(3){grid-column:1/-1;border-top:1px solid #e6e6e6}
+  .pousada{padding:90px 0 70px}
+  .mosaico{grid-template-rows:150px 110px 150px}
+  .blocos{grid-template-columns:1fr 1fr}
+  .bloco{aspect-ratio:1/1.1}
+  .itens{grid-template-columns:repeat(2,1fr)}
+  .item:nth-child(odd){border-left:0}
+  .item:nth-child(4){border-left:1px solid #dcdcdc}
+  .servicos-grade{grid-template-columns:1fr}
+  .servico:nth-child(5){max-width:none}
+  .onde .texto{margin:0 0 -30px;padding:40px 22px}
+  .atracoes-grade{grid-template-columns:1fr}
+  .depo{flex-basis:100%;padding:0 6px}
+  .titulo-linha::after{display:none}
+  .whats-flutuante{right:16px;bottom:16px;width:56px;height:56px}
+}
+</style>
+</head>
+<body>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Pousada Areias do Peró — início">
+      <img class="logo-branco" src="imagens/logo-branco.png" alt="Pousada Areias do Peró" width="700" height="301">
+      <img class="logo-azul" src="imagens/logo-azul.png" alt="Pousada Areias do Peró" width="700" height="301">
+    </a>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#pousada">A Pousada</a>
+      <a href="#acomodacoes">Acomodações</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#atracoes">Atrações</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-azul" href="#reservar" data-whats="Olá! Gostaria de fazer uma reserva na Pousada Areias do Peró.">Reservar</a>
+    </nav>
+    <button class="abre-menu" id="abre-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="local">Praia do Peró · Cabo Frio – RJ</p>
+      <h1>Um refúgio acolhedor pertinho do mar</h1>
+      <p class="sub">A apenas 500 metros da Praia do Peró, com café da manhã incluso e o carinho de um atendimento familiar.</p>
+    </div>
+  </section>
+
+  <div class="reserva" id="reservar">
+    <div class="wrap">
+      <form id="form-reserva" novalidate>
+        <div class="chamada"><strong>Faça sua reserva</strong><span>direto com a gente, pelo WhatsApp</span></div>
+        <label>Check-in<input type="date" id="checkin" name="checkin" required></label>
+        <label>Check-out<input type="date" id="checkout" name="checkout" required></label>
+        <label>Hóspedes
+          <select id="hospedes" name="hospedes">
+            <option value="1 adulto">1 adulto</option>
+            <option value="2 adultos" selected>2 adultos</option>
+            <option value="3 adultos">3 adultos</option>
+            <option value="4 adultos">4 adultos</option>
+            <option value="5 adultos">5 adultos</option>
+            <option value="6 adultos">6 adultos</option>
+            <option value="7 adultos">7 adultos</option>
+            <option value="8 adultos">8 adultos</option>
+          </select>
+        </label>
+        <button class="btn btn-azul" type="submit">Consultar disponibilidade</button>
+      </form>
+    </div>
+  </div>
+
+  <section class="pousada" id="pousada">
+    <div class="wrap">
+      <div class="surge">
+        <p class="olho">A Pousada</p>
+        <h2 class="titulo">Na Areias do Peró você se sente em casa, pertinho da praia</h2>
+        <p>A Pousada Areias do Peró nasceu para ser mais do que um lugar de descanso: é um refúgio acolhedor, a poucos passos da Praia do Peró, em Cabo Frio – Rio de Janeiro.</p>
+        <p>Nossa proposta é unir a simplicidade verdadeira ao conforto de um lar, oferecendo um atendimento próximo, familiar e cheio de carinho, aliado a uma estrutura pensada com atenção à acessibilidade.</p>
+        <p>Com inspiração no charme rústico do litoral, nossos ambientes combinam aconchego, arte e descontração. A decoração leva a assinatura criativa do artista Fábio Gomes Trindade, que traz ainda mais identidade e beleza aos espaços.</p>
+        <p>Graças à localização privilegiada, a apenas 500 metros da Praia do Peró, sua estadia aqui vai muito além da hospedagem: transforma-se em experiências únicas e memórias inesquecíveis.</p>
+        <a class="btn btn-azul" href="#reservar" data-whats="Olá! Gostaria de verificar a disponibilidade na Pousada Areias do Peró.">Verificar disponibilidade</a>
+      </div>
+      <div class="mosaico surge">
+        <img src="imagens/arcos-hospede.jpg" alt="Hóspede passando pelos arcos da pousada" loading="lazy">
+        <img src="imagens/mesa-cafe.jpg" alt="Mesa do café da manhã sendo preparada" loading="lazy">
+        <img src="imagens/hospedes-varanda.jpg" alt="Hóspedes conversando na varanda" loading="lazy">
+        <img src="imagens/noite-arcos.jpg" alt="Área comum da pousada iluminada à noite" loading="lazy">
+        <img src="imagens/quarto-janela.jpg" alt="Casal abrindo a janela do quarto" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="destaques">
+    <div class="wrap">
+      <h2 class="titulo surge">Sua pousada no Peró, Cabo Frio</h2>
+    </div>
+    <div class="blocos">
+      <a class="bloco" href="#localizacao"><img src="imagens/ilha-do-japones.jpg" alt="" loading="lazy"><h3>A 500 metros da praia</h3></a>
+      <a class="bloco" href="#servicos"><img src="imagens/cafe-da-manha.jpg" alt="" loading="lazy"><h3>Café da manhã incluso</h3></a>
+      <a class="bloco" href="#pousada"><img src="imagens/mural-arte.jpg" alt="" loading="lazy"><h3>Arte de Fábio Gomes Trindade</h3></a>
+      <a class="bloco" href="#servicos"><img src="imagens/pet-friendly.jpg" alt="" loading="lazy"><h3>Pet friendly</h3></a>
+    </div>
+  </section>
+
+  <section class="conforto">
+    <div class="wrap">
+      <h2 class="titulo surge">Tudo para o seu conforto</h2>
+      <div class="itens surge">
+        <div class="item"><svg viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3v3M12 3v3"/></svg>Café da manhã incluso</div>
+        <div class="item"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>Estacionamento gratuito</div>
+        <div class="item"><svg viewBox="0 0 24 24"><circle cx="5.5" cy="10" r="2"/><circle cx="9.5" cy="6" r="2"/><circle cx="14.5" cy="6" r="2"/><circle cx="18.5" cy="10" r="2"/><path d="M8 17c0-3 2-5.5 4-5.5s4 2.5 4 5.5a2.5 2.5 0 0 1-4 2 2.5 2.5 0 0 1-4-2z"/></svg>Aceitamos pets</div>
+        <div class="item"><svg viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"/><path d="M12 7v6h5l2 6M12 10h5"/><path d="M8.5 11.5a5.5 5.5 0 1 0 6.9 7"/></svg>Estrutura acessível</div>
+        <div class="item"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 18 0"/><rect x="2" y="12" width="4" height="7" rx="1.5"/><rect x="18" y="12" width="4" height="7" rx="1.5"/><path d="M20 19a3 3 0 0 1-3 3h-3"/></svg>Atendimento online</div>
+        <div class="item"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Pacote romântico</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="acomodacoes" id="acomodacoes">
+    <div class="wrap">
+      <p class="olho">Acomodações</p>
+      <h2 class="titulo titulo-linha">Nossas suítes</h2>
+      <p class="intro">Quartos confortáveis e acolhedores, ideais para uma estadia tranquila e agradável. Seja para relaxar ou explorar a região, nossos espaços proporcionam o descanso que você merece em um ambiente aconchegante e familiar.</p>
+      <div class="suites">
+        <article class="suite surge">
+          <div class="foto"><img src="imagens/suite-tripla.jpg" alt="Suíte Tripla" loading="lazy"><span class="pessoas">Até 3 pessoas</span></div>
+          <div class="corpo">
+            <h3>Suíte Tripla</h3>
+            <p>Ideal para casais com um filho ou para viajar com amigos.</p>
+            <ul><li>Smart TV</li><li>Ar-condicionado</li><li>Kit de banho</li><li>Enxoval completo</li></ul>
+            <a class="btn btn-azul" href="#reservar" data-whats="Olá! Gostaria de saber mais e consultar disponibilidade da Suíte Tripla.">Consultar esta suíte</a>
+          </div>
+        </article>
+        <article class="suite surge">
+          <div class="foto"><img src="imagens/suite-quadrupla.jpg" alt="Suíte Quádrupla" loading="lazy"><span class="pessoas">Até 4 pessoas</span></div>
+          <div class="corpo">
+            <h3>Suíte Quádrupla</h3>
+            <p>Espaço de sobra para a família curtir o Peró com conforto.</p>
+            <ul><li>Smart TV</li><li>Ar-condicionado</li><li>Kit de banho</li><li>Enxoval completo</li></ul>
+            <a class="btn btn-azul" href="#reservar" data-whats="Olá! Gostaria de saber mais e consultar disponibilidade da Suíte Quádrupla.">Consultar esta suíte</a>
+          </div>
+        </article>
+        <article class="suite surge">
+          <div class="foto"><img src="imagens/suite-familia.jpg" alt="Suíte Família" loading="lazy"><span class="pessoas">Até 8 pessoas</span></div>
+          <div class="corpo">
+            <h3>Suíte Família</h3>
+            <p>Nossa maior acomodação, perfeita para grupos e famílias grandes.</p>
+            <ul><li>Smart TV</li><li>Ar-condicionado</li><li>Kit de banho</li><li>Enxoval completo</li><li>Varanda</li></ul>
+            <a class="btn btn-azul" href="#reservar" data-whats="Olá! Gostaria de saber mais e consultar disponibilidade da Suíte Família.">Consultar esta suíte</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <div class="wrap">
+      <p class="olho">Serviços</p>
+      <h2 class="titulo titulo-linha">Cuidados que fazem a diferença</h2>
+      <div class="servicos-grade">
+        <article class="servico surge">
+          <img src="imagens/cafe-da-manha.jpg" alt="Hóspedes se servindo no café da manhã" loading="lazy">
+          <div class="corpo"><h3>Café da manhã</h3><p>Comece o dia com um delicioso café da manhã, incluso na diária, com variedade de pães, bolos, frutas e bebidas quentes. Uma refeição preparada com carinho para você aproveitar momentos gostosos e energizar suas manhãs.</p></div>
+        </article>
+        <article class="servico surge">
+          <img src="imagens/pacote-romantico.jpg" alt="Casal em quarto decorado com pétalas de rosa" loading="lazy">
+          <div class="corpo"><h3>Pacote romântico</h3><p>Para tornar sua estadia ainda mais especial, oferecemos um pacote romântico exclusivo, disponível mediante solicitação antecipada. Uma surpresa pensada para criar momentos únicos e inesquecíveis a dois.</p></div>
+        </article>
+        <article class="servico surge">
+          <img src="imagens/jardim-noite.jpg" alt="Jardim da pousada iluminado à noite" loading="lazy">
+          <div class="corpo"><h3>Atendimento</h3><p>Nosso atendimento online está sempre pronto para ajudar. Seja para tirar dúvidas, orientar ou tornar sua estadia ainda mais confortável, estamos sempre à disposição.</p></div>
+        </article>
+        <article class="servico surge">
+          <img src="imagens/estacionamento.jpg" alt="Estacionamento privativo da pousada" loading="lazy">
+          <div class="corpo"><h3>Estacionamento</h3><p>Oferecemos estacionamento privativo gratuito para que você possa aproveitar sua estadia com total tranquilidade. Seu carro fica seguro e próximo, sem preocupações.</p></div>
+        </article>
+        <article class="servico surge">
+          <img src="imagens/pet-friendly.jpg" alt="Cachorrinho descansando em frente ao mural da pousada" loading="lazy">
+          <div class="corpo"><h3>Pet friendly</h3><p>Aceitamos pets! Seu melhor amigo de quatro patas é bem-vindo. Pedimos que informe a presença do pet no momento da reserva, para que possamos preparar tudo com conforto e segurança para todos.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="onde" id="localizacao">
+    <div class="caixa">
+      <div class="texto surge">
+        <p class="olho">Onde estamos</p>
+        <h2 class="titulo">Bom mesmo é se hospedar pertinho da praia!</h2>
+        <p>A Pousada Areias do Peró fica a 500 metros da Praia do Peró — perto o bastante para ir e voltar a pé, sem precisar tirar o carro da garagem.</p>
+        <p>O Peró é um bairro tranquilo e familiar de Cabo Frio, com farmácia, lojas e restaurantes por perto. Dali você chega fácil à Praia das Conchas, ao Morro do Vigia e à Ilha do Japonês.</p>
+        <p class="endereco">Rua Olívia Lopes, nº 14 B – Peró, Cabo Frio – RJ<br>CEP 28922-332</p>
+        <a class="btn btn-azul" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Ol%C3%ADvia+Lopes+14+Per%C3%B3+Cabo+Frio+RJ" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+      <div class="mapa">
+        <iframe title="Mapa da Pousada Areias do Peró" src="https://www.google.com/maps?q=Rua+Ol%C3%ADvia+Lopes+14+Per%C3%B3+Cabo+Frio+RJ+28922-332&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="atracoes" id="atracoes">
+    <div class="wrap">
+      <p class="olho">Atrações</p>
+      <h2 class="titulo titulo-linha">Para curtir por perto</h2>
+      <div class="atracoes-grade">
+        <article class="atracao surge"><img src="imagens/ilha-do-japones.jpg" alt="Vista aérea da Ilha do Japonês" loading="lazy"><div class="corpo"><h3>Ilha do Japonês</h3><p>Um paraíso de águas calmas e rasas, ideal para relaxar ou praticar stand up paddle. A travessia é rápida e garante contato direto com a natureza em um cenário inesquecível.</p></div></article>
+        <article class="atracao surge"><img src="imagens/morro-do-vigia.jpg" alt="Vista do alto do Morro do Vigia" loading="lazy"><div class="corpo"><h3>Morro do Vigia</h3><p>Localizado entre a Praia do Peró e a Praia das Conchas, o Morro do Vigia é acessado por uma trilha curta e moderada.</p></div></article>
+        <article class="atracao surge"><img src="imagens/praia-das-conchas.jpg" alt="Vista aérea da Praia das Conchas" loading="lazy"><div class="corpo"><h3>Praia das Conchas</h3><p>Com mar calmo e formato em concha, essa praia é perfeita para famílias e quem busca tranquilidade. Possui boa estrutura e paisagem encantadora, ótima para relaxar e tirar fotos.</p></div></article>
+        <article class="atracao surge"><img src="imagens/shopping-pero.jpg" alt="Shopping do Peró à noite" loading="lazy"><div class="corpo"><h3>Shopping Peró</h3><p>Pequeno, charmoso e cheio de personalidade. No Shopping do Peró você encontra lojas, gastronomia local e uma feirinha com artesanato e lembranças da região.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="fotos">
+    <div class="wrap">
+      <h2 class="titulo titulo-linha">Siga-nos no Instagram</h2>
+      <div class="fotos">
+        <a href="https://www.instagram.com/areiasdoperooficial/" target="_blank" rel="noopener"><img src="imagens/entrada.jpg" alt="Entrada da pousada" loading="lazy"></a>
+        <a href="https://www.instagram.com/areiasdoperooficial/" target="_blank" rel="noopener"><img src="imagens/tacas.jpg" alt="Taças personalizadas da pousada" loading="lazy"></a>
+        <a href="https://www.instagram.com/areiasdoperooficial/" target="_blank" rel="noopener"><img src="imagens/jardim-noite.jpg" alt="Jardim iluminado à noite" loading="lazy"></a>
+        <a href="https://www.instagram.com/areiasdoperooficial/" target="_blank" rel="noopener"><img src="imagens/cama-petalas.jpg" alt="Cama decorada com coração de pétalas" loading="lazy"></a>
+      </div>
+      <a class="insta" href="https://www.instagram.com/areiasdoperooficial/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+        @areiasdoperooficial
+      </a>
+    </div>
+  </section>
+
+  <section class="chamada-reserva">
+    <div class="wrap">
+      <h2>Reserve agora e garanta sua estadia pertinho da Praia do Peró</h2>
+      <p>Clique no botão abaixo e fale direto com a gente!</p>
+      <a class="btn btn-branco" href="#reservar" data-whats="Olá! Gostaria de fazer uma reserva na Pousada Areias do Peró.">Garanta sua reserva</a>
+    </div>
+  </section>
+
+  <section class="depoimentos" id="depoimentos">
+    <div class="wrap">
+      <p class="olho">Depoimentos</p>
+      <h2 class="titulo">O que dizem nossos hóspedes</h2>
+      <div class="carrossel" id="carrossel">
+        <div class="trilho">
+          <figure class="depo"><span class="fonte">Google</span><blockquote>“Espetacular, excelentes quartos, um capricho, café da manhã delicioso, uma recepção acolhedora, muito carinho com meu pet. E, como nosso ônibus era após o horário da minha saída, com muito carinho nos deixaram esperar o horário sem cobrar nada mais.”</blockquote><div class="estrelas" aria-label="5 de 5">★★★★★</div><cite>Simone Ferreira</cite></figure>
+          <figure class="depo"><span class="fonte">Tripadvisor</span><blockquote>“Pousada super bem localizada, os quartos são super limpos, equipados com TV, frigobar e ar condicionado, tudo novinho! Estacionamento fechado. Pertinho da praia.”</blockquote><div class="estrelas" aria-label="5 de 5">★★★★★</div><cite>Leonardo Jardim</cite></figure>
+          <figure class="depo"><span class="fonte">Google</span><blockquote>“Fomos muito bem atendidos, café muito bom, a recepção muito amigável. A praia do Peró é agradável, mais familiar, voltarei mais vezes. Farmácia, lojas, restaurantes, tudo muito perto. Local seguro e tranquilo. Quarto bom, limpo, enfim, um excelente custo-benefício.”</blockquote><div class="estrelas" aria-label="5 de 5">★★★★★</div><cite>Daniel Boy</cite></figure>
+          <figure class="depo"><span class="fonte">Booking.com</span><blockquote>“Passei a me encantar pela pousada no momento que fechei pelo Booking.com. No mesmo dia, a proprietária entrou em contato via WhatsApp, disponibilizando total atenção. Ao chegar no local, fomos recebidos pela Eliane, uma funcionária maravilhosa e super acolhedora. Em relação aos quartos, tudo muito novo, com muito capricho e cuidado. Café da manhã maravilhoso, muito fresquinho… tudo feito na hora.”</blockquote><div class="estrelas" aria-label="5 de 5">★★★★★</div><cite>Samira</cite></figure>
+          <figure class="depo"><span class="fonte">Google</span><blockquote>“A pousada é maravilhosa, sem dúvidas uma das mais incríveis. Fomos muito bem recebidos, o quarto é impecável, ar-condicionado e frigobar no quarto, banheiro confortável, o espaço no térreo é uma delícia, ótimo para relaxar e tirar fotos. Café da manhã muito bem servido e as funcionárias são muito simpáticas. Amei e com certeza vou retornar mais vezes.”</blockquote><div class="estrelas" aria-label="5 de 5">★★★★★</div><cite>Helen Lorensutti Rosmann F.</cite></figure>
+          <figure class="depo"><span class="fonte">Tripadvisor</span><blockquote>“Tive uma experiência maravilhosa! Fiquei um final de semana nessa pousada maravilhosa para comemorar o meu aniversário junto com a minha família. Fui muito bem recebido pelo gerente, que ficou nos aguardando, pois a viagem atrasou um pouquinho. Ele é muito simpático, deu dicas sobre a região e explicou muito bem como funcionava as coisas na pousada.”</blockquote><div class="estrelas" aria-label="5 de 5">★★★★★</div><cite>Vida de Carioca</cite></figure>
+          <figure class="depo"><span class="fonte">Tripadvisor</span><blockquote>“5 minutos da praia andando (deixamos o carro na garagem), café da manhã reforçado (eles fazem ovos e torradas na hora), camas maravilhosas, Wi-Fi bom. Ficamos no apartamento para 8 pessoas, tínhamos cozinha, dois andares e duas sacadas. Fomos a pé para o shopping do Peró, com as melhores opções de restaurantes do bairro.”</blockquote><div class="estrelas" aria-label="5 de 5">★★★★★</div><cite>496msc</cite></figure>
+          <figure class="depo"><span class="fonte">Booking.com</span><blockquote>“Todo funciona bien y es muy completo. Desde el desayuno hasta las habitaciones. El personal es atento y servicial. Volveremos sin duda.”</blockquote><div class="estrelas" aria-label="5 de 5">★★★★★</div><cite>Nahuel</cite></figure>
+        </div>
+        <div class="setas">
+          <button type="button" id="ant" aria-label="Depoimento anterior">‹</button>
+          <div class="pontos" id="pontos"></div>
+          <button type="button" id="prox" aria-label="Próximo depoimento">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape" id="contato">
+  <div class="wrap">
+    <div class="grade">
+      <div>
+        <img src="imagens/logo-branco.png" alt="Pousada Areias do Peró" width="700" height="301" loading="lazy">
+        <p>Seja bem-vindo à Pousada Areias do Peró, o seu refúgio acolhedor a apenas 500 metros da Praia do Peró, em Cabo Frio.</p>
+        <div class="redes">
+          <a href="https://www.instagram.com/areiasdoperooficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/areiasdopero/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.1L14.1 2C10.9 2 10.2 4.4 10.2 5.9v2.6H8V12h2.2v10H14V12h2.7l.4-3.5z"/></svg></a>
+          <a href="#reservar" data-whats="Olá! Vim pelo site da Pousada Areias do Peró." aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Rua Olívia Lopes, nº 14 B – Peró<br>Cabo Frio – RJ · CEP 28922-332</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+552220414623">+55 (22) 2041-4623</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:contato@areiasdopero.com.br">contato@areiasdopero.com.br</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#pousada">A Pousada</a></li>
+          <li><a href="#acomodacoes">Acomodações</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#atracoes">Atrações</a></li>
+          <li><a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Ol%C3%ADvia+Lopes+14+Per%C3%B3+Cabo+Frio+RJ" target="_blank" rel="noopener">Como chegar</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="direitos">© <span id="ano">2026</span> Pousada Areias do Peró · Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<a class="whats-flutuante" href="#reservar" data-whats="Olá! Vim pelo site da Pousada Areias do Peró e gostaria de mais informações." aria-label="Fale conosco pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+(function(){
+  var WHATS = '552220414623';
+  function abreWhats(msg){
+    window.open('https://wa.me/' + WHATS + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  }
+
+  // links com data-whats abrem o WhatsApp com a mensagem pronta
+  document.querySelectorAll('[data-whats]').forEach(function(el){
+    el.setAttribute('href', 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(el.dataset.whats));
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener');
+  });
+
+  // barra de reserva
+  var hoje = new Date(); hoje.setMinutes(hoje.getMinutes() - hoje.getTimezoneOffset());
+  var iso = hoje.toISOString().slice(0,10);
+  var cin = document.getElementById('checkin'), cout = document.getElementById('checkout');
+  cin.min = iso; cout.min = iso;
+  cin.addEventListener('change', function(){
+    cout.min = cin.value || iso;
+    if (cout.value && cout.value <= cin.value) cout.value = '';
+  });
+  function br(d){ var p = d.split('-'); return p[2] + '/' + p[1] + '/' + p[0]; }
+  document.getElementById('form-reserva').addEventListener('submit', function(e){
+    e.preventDefault();
+    var hosp = document.getElementById('hospedes').value;
+    var msg = 'Olá! Gostaria de consultar disponibilidade na Pousada Areias do Peró.';
+    if (cin.value) msg += '\nCheck-in: ' + br(cin.value);
+    if (cout.value) msg += '\nCheck-out: ' + br(cout.value);
+    msg += '\nHóspedes: ' + hosp;
+    abreWhats(msg);
+  });
+
+  // topo sólido ao rolar
+  var topo = document.getElementById('topo');
+  function rolagem(){ topo.classList.toggle('solido', window.scrollY > 60); }
+  rolagem(); window.addEventListener('scroll', rolagem, {passive:true});
+
+  // menu mobile
+  var botao = document.getElementById('abre-menu');
+  botao.addEventListener('click', function(){
+    var aberto = topo.classList.toggle('menu-aberto');
+    botao.setAttribute('aria-expanded', aberto);
+    document.body.style.overflow = aberto ? 'hidden' : '';
+  });
+  document.querySelectorAll('#menu a').forEach(function(a){
+    a.addEventListener('click', function(){
+      topo.classList.remove('menu-aberto');
+      botao.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // animação de entrada
+  if ('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('visivel'); obs.unobserve(en.target); } });
+    }, {threshold:.12});
+    document.querySelectorAll('.surge').forEach(function(el){ obs.observe(el); });
+  } else {
+    document.querySelectorAll('.surge').forEach(function(el){ el.classList.add('visivel'); });
+  }
+
+  // carrossel de depoimentos
+  var trilho = document.querySelector('.trilho');
+  var itens = trilho.children, pontos = document.getElementById('pontos');
+  var pos = 0, timer;
+  function porTela(){ return window.innerWidth <= 600 ? 1 : window.innerWidth <= 1080 ? 2 : 3; }
+  function paginas(){ return Math.max(1, itens.length - porTela() + 1); }
+  function desenhaPontos(){
+    pontos.innerHTML = '';
+    for (var i = 0; i < paginas(); i++){
+      var b = document.createElement('button');
+      b.type = 'button'; b.setAttribute('aria-label', 'Ir para o depoimento ' + (i + 1));
+      b.addEventListener('click', (function(n){ return function(){ vai(n); reinicia(); }; })(i));
+      pontos.appendChild(b);
+    }
+  }
+  function vai(n){
+    var total = paginas();
+    pos = (n + total) % total;
+    trilho.style.transform = 'translateX(' + (-pos * 100 / porTela()) + '%)';
+    [].forEach.call(pontos.children, function(b, i){ b.classList.toggle('ativo', i === pos); });
+  }
+  function reinicia(){ clearInterval(timer); timer = setInterval(function(){ vai(pos + 1); }, 7000); }
+  document.getElementById('ant').addEventListener('click', function(){ vai(pos - 1); reinicia(); });
+  document.getElementById('prox').addEventListener('click', function(){ vai(pos + 1); reinicia(); });
+  var largura = window.innerWidth;
+  window.addEventListener('resize', function(){
+    if (window.innerWidth === largura) return;
+    largura = window.innerWidth; desenhaPontos(); vai(Math.min(pos, paginas() - 1));
+  });
+  desenhaPontos(); vai(0); reinicia();
+
+  document.getElementById('ano').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
