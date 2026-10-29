@@ -140,11 +140,12 @@ section{position:relative}
 
 /* ---------- acomodações ---------- */
 .acomodacoes{padding:90px 0 110px;background:var(--azul-claro)}
-.acomodacoes-topo{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin:-6px 0 48px}
+.acomodacoes-topo{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center;margin:-6px 0 48px}
 .acomodacoes .intro{color:var(--texto-suave);margin:0;font-size:17px}
-.foto-quarto{margin:0;position:relative}
-.foto-quarto img{width:100%;aspect-ratio:3/2;object-fit:cover;box-shadow:0 18px 40px rgba(11,61,94,.15)}
-.foto-quarto figcaption{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);color:var(--azul);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px}
+.fotos-quartos{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:180px 180px;gap:8px}
+.fotos-quartos img{width:100%;height:100%;object-fit:cover}
+.fotos-quartos .principal{grid-row:1/3;margin:0;position:relative}
+.fotos-quartos figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.94);color:var(--azul);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px}
 .acomodacoes .intro strong{color:var(--texto);font-weight:600}
 .quartos{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .quarto{background:var(--branco);padding:32px 30px 30px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(11,61,94,.07);border-top:3px solid var(--azul)}
@@ -315,6 +316,8 @@ section{position:relative}
   .item:nth-child(4){border-left:1px solid #dcdcdc}
   .servicos-grade{grid-template-columns:1fr}
   .quartos{grid-template-columns:1fr}
+  .fotos-quartos{grid-template-columns:1fr 1fr;grid-template-rows:220px 130px 130px}
+  .fotos-quartos .principal{grid-row:auto;grid-column:1/-1}
   .quarto{padding:28px 22px 26px}
   .conjugados{grid-template-columns:1fr;padding:26px 22px;gap:16px}
   .servico:nth-child(5){max-width:none}
@@ -434,7 +437,13 @@ section{position:relative}
       <h2 class="titulo titulo-linha">Nossos quartos</h2>
       <div class="acomodacoes-topo">
         <p class="intro">São 9 quartos, para 2 a 8 pessoas, no térreo e no andar superior — vários com cozinha compacta, para você ficar à vontade como em casa. <strong>Todos têm ar-condicionado, Smart TV e kit de banho.</strong></p>
-        <figure class="foto-quarto"><img src="imagens/quarto-cozinha.jpg" alt="Quarto com cama de casal, frigobar e cozinha compacta com cooktop e pia" loading="lazy"><figcaption>Quarto com cozinha compacta</figcaption></figure>
+        <div class="fotos-quartos">
+          <figure class="principal"><img src="imagens/quarto-duas-camas.jpg" alt="Quarto 6, com duas camas de casal, TV, ar-condicionado e cozinha compacta" loading="lazy"><figcaption>Quarto 6 · até 5 pessoas</figcaption></figure>
+          <img src="imagens/quarto-cozinha.jpg" alt="Cozinha compacta com cooktop, pia e Smart TV" loading="lazy">
+          <img src="imagens/banheiro.jpg" alt="Banheiro com box de vidro" loading="lazy">
+          <img src="imagens/quarto-sotao.jpg" alt="Quarto no andar superior com teto inclinado e cama de casal" loading="lazy">
+          <img src="imagens/enxoval.jpg" alt="Toalhas brancas dobradas sobre a cama" loading="lazy">
+        </div>
       </div>
       <div class="quartos">
         <article class="quarto surge">
@@ -513,7 +522,7 @@ section{position:relative}
           <div class="corpo"><h3>Estacionamento</h3><p>Oferecemos estacionamento privativo gratuito para que você possa aproveitar sua estadia com total tranquilidade. Seu carro fica seguro e próximo, sem preocupações.</p></div>
         </article>
         <article class="servico surge">
-          <img src="imagens/pet-friendly.jpg" alt="Cachorrinho descansando em frente ao mural da pousada" loading="lazy">
+          <img src="imagens/pet-friendly.jpg" alt="Golden retriever sentado em frente ao mural da arara" loading="lazy" style="object-position:center 35%">
           <div class="corpo"><h3>Pet friendly</h3><p>Aceitamos pets! Seu melhor amigo de quatro patas é bem-vindo. Pedimos que informe a presença do pet no momento da reserva, para que possamos preparar tudo com conforto e segurança para todos.</p></div>
         </article>
       </div>
