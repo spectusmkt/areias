@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" href="imagens/icone.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Forum&family=Julius+Sans+One&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,9 +44,9 @@
   --texto-suave:#6b6b6b;
   --branco:#fff;
   --whats:#25d366;
-  --titulo:"Julius Sans One",sans-serif;
-  --serif:"Forum",serif;
-  --corpo:"Raleway",sans-serif;
+  --titulo:"Cormorant Garamond",Georgia,serif;
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --corpo:"Mulish",sans-serif;
   --max:1200px;
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -56,7 +56,7 @@ img{max-width:100%;display:block}
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
 .olho{font-family:var(--corpo);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);margin:0 0 10px}
-.titulo{font-family:var(--titulo);font-weight:400;text-transform:uppercase;letter-spacing:.04em;color:var(--texto);font-size:clamp(26px,3.4vw,38px);line-height:1.2;margin:0 0 24px}
+.titulo{font-family:var(--titulo);font-weight:500;color:var(--texto);font-size:clamp(32px,4vw,46px);line-height:1.15;margin:0 0 24px}
 .titulo-linha{display:flex;align-items:center;gap:24px}
 .titulo-linha::after{content:"";flex:1;height:1px;background:var(--azul);opacity:.5}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--corpo);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:16px 30px;border:0;border-radius:2px;cursor:pointer;transition:background .2s,transform .2s,color .2s}
@@ -66,7 +66,7 @@ a{color:inherit}
 .btn-branco:hover{background:var(--areia)}
 .btn-contorno{background:transparent;color:var(--branco);box-shadow:inset 0 0 0 1px rgba(255,255,255,.8)}
 .btn-contorno:hover{background:var(--branco);color:var(--azul)}
-.nota{font-family:var(--titulo);text-transform:uppercase;font-size:12px;letter-spacing:.08em;color:var(--texto-suave);margin-top:14px}
+.nota{font-family:var(--corpo);text-transform:uppercase;font-size:12px;letter-spacing:.08em;color:var(--texto-suave);margin-top:14px}
 section{position:relative}
 
 /* ---------- topo ---------- */
@@ -94,17 +94,17 @@ section{position:relative}
 .hero h1,.hero .sub,.hero .local{text-shadow:0 2px 18px rgba(0,0,0,.35)}
 .hero .wrap{position:relative;text-align:center}
 .hero .local{font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 18px}
-.hero h1{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:clamp(32px,5.2vw,64px);line-height:1.12;letter-spacing:.03em;margin:0 auto 22px;max-width:19ch}
-.hero .sub{font-family:var(--serif);font-size:clamp(19px,2vw,24px);margin:0 auto;max-width:34ch;opacity:.95}
+.hero h1{font-family:var(--titulo);font-weight:500;font-size:clamp(42px,6.2vw,80px);line-height:1.05;margin:0 auto 22px;max-width:14ch}
+.hero .sub{font-family:var(--serif);font-size:clamp(21px,2.2vw,26px);margin:0 auto;max-width:34ch;opacity:.95}
 
 /* ---------- barra de reserva ---------- */
 .reserva{position:relative;z-index:5;margin-top:-90px}
 .reserva form{background:var(--branco);box-shadow:0 18px 50px rgba(11,61,94,.18);display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr auto;align-items:stretch}
 .reserva .chamada{display:flex;flex-direction:column;justify-content:center;padding:22px 26px;border-right:1px solid #e6e6e6}
-.reserva .chamada strong{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:18px;color:var(--azul);line-height:1.2}
-.reserva .chamada span{font-family:var(--serif);font-size:16px;color:var(--texto-suave)}
+.reserva .chamada strong{font-family:var(--titulo);font-weight:600;font-size:24px;color:var(--azul);line-height:1.2}
+.reserva .chamada span{font-family:var(--serif);font-size:18px;color:var(--texto-suave)}
 .reserva label{display:flex;flex-direction:column;justify-content:center;padding:18px 22px;border-right:1px solid #e6e6e6;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul)}
-.reserva input,.reserva select{font-family:var(--serif);font-size:19px;color:var(--texto);border:0;background:transparent;padding:6px 0 0;width:100%;outline:none;appearance:none;-webkit-appearance:none}
+.reserva input,.reserva select{font-family:var(--corpo);font-size:16px;color:var(--texto);border:0;background:transparent;padding:6px 0 0;width:100%;outline:none;appearance:none;-webkit-appearance:none}
 .reserva select{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2300669e' stroke-width='1.6'/%3E%3C/svg%3E") right 2px center no-repeat;padding-right:20px;cursor:pointer}
 .reserva .btn{border-radius:0;padding:0 34px;font-size:13px}
 .reserva label.erro{background:#fdf1f0;color:#b3261e}
@@ -131,7 +131,7 @@ section{position:relative}
 .bloco::after{content:"";position:absolute;inset:0;background:rgba(11,61,94,.5);transition:background .4s}
 .bloco:hover img{transform:scale(1.06)}
 .bloco:hover::after{background:rgba(11,61,94,.35)}
-.bloco h3{position:relative;z-index:1;font-family:var(--serif);font-weight:400;font-size:clamp(22px,2vw,28px);line-height:1.2;margin:0;padding:0 20px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.bloco h3{position:relative;z-index:1;font-family:var(--serif);font-weight:500;font-size:clamp(26px,2.4vw,34px);line-height:1.2;margin:0;padding:0 20px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
 
 /* ---------- conforto ---------- */
 .conforto{padding:70px 0}
@@ -156,8 +156,8 @@ section{position:relative}
 .quarto .cap{display:flex;align-items:baseline;gap:8px;color:var(--azul);margin-bottom:6px}
 .quarto .cap strong{font-family:var(--serif);font-weight:400;font-size:54px;line-height:1}
 .quarto .cap span{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.quarto h3{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:21px;letter-spacing:.05em;margin:0 0 4px;color:var(--texto)}
-.quarto .numeros{margin:0 0 18px;font-family:var(--serif);font-size:17px;color:var(--texto-suave)}
+.quarto h3{font-family:var(--titulo);font-weight:600;font-size:27px;line-height:1.15;margin:0 0 4px;color:var(--texto)}
+.quarto .numeros{margin:0 0 18px;font-family:var(--serif);font-style:italic;font-size:19px;color:var(--texto-suave)}
 .quarto ul{list-style:none;padding:18px 0 0;margin:0 0 26px;border-top:1px solid #e6e6e6;font-size:14.5px;color:var(--texto-suave)}
 .quarto li{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;line-height:1.45}
 .quarto li svg,.conjugados svg{flex:0 0 20px;width:20px;height:20px;stroke:var(--azul);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
@@ -171,7 +171,7 @@ section{position:relative}
 .conjugados{margin-top:24px;background:var(--branco);padding:28px 32px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;box-shadow:0 10px 30px rgba(11,61,94,.07)}
 .conjugados .icone{width:56px;height:56px;border-radius:50%;background:var(--azul-claro);display:flex;align-items:center;justify-content:center}
 .conjugados .icone svg{width:26px;height:26px;flex-basis:26px}
-.conjugados h3{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--azul);margin:0 0 4px;line-height:1.25}
+.conjugados h3{font-family:var(--serif);font-weight:600;font-size:28px;color:var(--azul);margin:0 0 4px;line-height:1.25}
 .conjugados p{margin:0;color:var(--texto-suave);font-size:15px}
 
 /* ---------- serviços ---------- */
@@ -181,7 +181,7 @@ section{position:relative}
 .servico:nth-child(4){grid-column:2/span 2}
 .servico img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .servico .corpo{padding:24px 4px 0}
-.servico h3{font-family:var(--serif);font-weight:400;font-size:26px;color:var(--azul);margin:0 0 8px;line-height:1.2}
+.servico h3{font-family:var(--serif);font-weight:600;font-size:30px;color:var(--azul);margin:0 0 8px;line-height:1.2}
 .servico p{margin:0;color:var(--texto-suave);font-size:15px}
 
 /* ---------- onde estamos ---------- */
@@ -200,7 +200,7 @@ section{position:relative}
 .atracao{background:var(--branco);display:flex;flex-direction:column}
 .atracao img{width:100%;aspect-ratio:1/1;object-fit:cover}
 .atracao .corpo{padding:22px 22px 26px}
-.atracao h3{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:18px;letter-spacing:.05em;margin:0 0 10px}
+.atracao h3{font-family:var(--titulo);font-weight:600;font-size:24px;line-height:1.2;margin:0 0 10px}
 .atracao p{margin:0;font-size:14.5px;color:var(--texto-suave)}
 
 /* ---------- galeria ---------- */
@@ -217,8 +217,8 @@ section{position:relative}
 .chamada-reserva{padding:120px 0;color:var(--branco);text-align:center;background:#1d2a33 url(imagens/mural.jpg) center 60%/cover no-repeat}
 .chamada-reserva::before{content:"";position:absolute;inset:0;background:rgba(6,30,48,.62)}
 .chamada-reserva .wrap{position:relative}
-.chamada-reserva h2{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:clamp(26px,3.6vw,40px);line-height:1.2;margin:0 auto 14px;max-width:22ch}
-.chamada-reserva p{font-family:var(--serif);font-size:21px;margin:0 0 32px}
+.chamada-reserva h2{font-family:var(--titulo);font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.1;line-height:1.2;margin:0 auto 14px;max-width:22ch}
+.chamada-reserva p{font-family:var(--serif);font-size:23px;margin:0 0 32px}
 
 /* ---------- depoimentos ---------- */
 .depoimentos{padding:110px 0 100px;text-align:center;overflow:hidden}
