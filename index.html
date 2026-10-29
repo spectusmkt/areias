@@ -90,7 +90,8 @@ section{position:relative}
 
 /* ---------- hero ---------- */
 .hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;color:var(--branco);background:#1d2a33 url(imagens/fachada-entardecer.jpg) center 60%/cover no-repeat;padding:120px 0 170px}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,30,48,.55) 0%,rgba(6,30,48,.25) 45%,rgba(6,30,48,.6) 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 48%,rgba(4,20,33,.45),transparent 75%),linear-gradient(180deg,rgba(4,20,33,.7) 0%,rgba(4,20,33,.5) 45%,rgba(4,20,33,.72) 100%)}
+.hero h1,.hero .sub,.hero .local{text-shadow:0 2px 18px rgba(0,0,0,.35)}
 .hero .wrap{position:relative;text-align:center}
 .hero .local{font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 18px}
 .hero h1{font-family:var(--titulo);font-weight:400;text-transform:uppercase;font-size:clamp(32px,5.2vw,64px);line-height:1.12;letter-spacing:.03em;margin:0 auto 22px;max-width:19ch}
@@ -106,6 +107,9 @@ section{position:relative}
 .reserva input,.reserva select{font-family:var(--serif);font-size:19px;color:var(--texto);border:0;background:transparent;padding:6px 0 0;width:100%;outline:none;appearance:none;-webkit-appearance:none}
 .reserva select{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2300669e' stroke-width='1.6'/%3E%3C/svg%3E") right 2px center no-repeat;padding-right:20px;cursor:pointer}
 .reserva .btn{border-radius:0;padding:0 34px;font-size:13px}
+.reserva label.erro{background:#fdf1f0;color:#b3261e}
+.aviso-reserva{margin:10px 0 0;min-height:1em;font-size:14px;font-weight:600;color:#b3261e;text-align:center}
+.aviso-reserva:empty{margin:0}
 
 /* ---------- a pousada ---------- */
 .pousada{padding:120px 0 100px}
@@ -381,6 +385,7 @@ section{position:relative}
         </label>
         <button class="btn btn-azul" type="submit">Consultar disponibilidade</button>
       </form>
+      <p class="aviso-reserva" id="aviso-reserva" role="alert"></p>
     </div>
   </div>
 
@@ -655,7 +660,9 @@ section{position:relative}
 (function(){
   var WHATS = '552220414623';
   function abreWhats(msg){
-    window.open('https://wa.me/' + WHATS + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    var url = 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(msg);
+    var aba = window.open(url, '_blank');
+    if (aba) aba.opener = null; else window.location.href = url;
   }
 
   // links com data-whats abrem o WhatsApp com a mensagem pronta
@@ -674,14 +681,28 @@ section{position:relative}
     cout.min = cin.value || iso;
     if (cout.value && cout.value <= cin.value) cout.value = '';
   });
-  function br(d){ var p = d.split('-'); return p[2] + '/' + p[1] + '/' + p[0]; }
+  var DIAS = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'];
+  function data(v){ var p = v.split('-'); return new Date(+p[0], p[1] - 1, +p[2]); }
+  function br(v){ var p = v.split('-'); return DIAS[data(v).getDay()] + ', ' + p[2] + '/' + p[1] + '/' + p[0]; }
+  var aviso = document.getElementById('aviso-reserva');
+  [cin, cout].forEach(function(el){
+    el.addEventListener('change', function(){ el.closest('label').classList.remove('erro'); aviso.textContent = ''; });
+  });
   document.getElementById('form-reserva').addEventListener('submit', function(e){
     e.preventDefault();
-    var hosp = document.getElementById('hospedes').value;
-    var msg = 'Olá! Gostaria de consultar disponibilidade na Pousada Areias do Peró.';
-    if (cin.value) msg += '\nCheck-in: ' + br(cin.value);
-    if (cout.value) msg += '\nCheck-out: ' + br(cout.value);
-    msg += '\nHóspedes: ' + hosp;
+    var faltando = [cin, cout].filter(function(el){ return !el.value; });
+    faltando.forEach(function(el){ el.closest('label').classList.add('erro'); });
+    if (faltando.length){
+      aviso.textContent = 'Escolha as datas de check-in e check-out para consultarmos a disponibilidade.';
+      faltando[0].focus();
+      return;
+    }
+    var diarias = Math.round((data(cout.value) - data(cin.value)) / 864e5);
+    var msg = 'Olá! Vim pelo site e gostaria de consultar disponibilidade na Pousada Areias do Peró:\n\n'
+      + '*Check-in:* ' + br(cin.value) + '\n'
+      + '*Check-out:* ' + br(cout.value) + '\n'
+      + '*Diárias:* ' + diarias + '\n'
+      + '*Hóspedes:* ' + document.getElementById('hospedes').value;
     abreWhats(msg);
   });
 
