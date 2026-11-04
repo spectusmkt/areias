@@ -24,7 +24,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -55,8 +55,8 @@
   --texto-suave:#6b6b6b;
   --branco:#fff;
   --whats:#25d366;
-  --titulo:"Cormorant Garamond",Georgia,serif;
-  --serif:"Cormorant Garamond",Georgia,serif;
+  --titulo:"Poppins",sans-serif;
+  --serif:"Poppins",sans-serif;
   --corpo:"Mulish",sans-serif;
   --max:1200px;
 }
@@ -66,10 +66,8 @@ body{margin:0;font-family:var(--corpo);color:var(--texto);background:var(--branc
 img{max-width:100%;display:block}
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-.olho{font-family:var(--corpo);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);margin:0 0 10px}
-.titulo{font-family:var(--titulo);font-weight:500;color:var(--texto);font-size:clamp(32px,4vw,46px);line-height:1.15;margin:0 0 24px}
-.titulo-linha{display:flex;align-items:center;gap:24px}
-.titulo-linha::after{content:"";flex:1;height:1px;background:var(--azul);opacity:.5}
+.olho{font-family:var(--corpo);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);margin:0 0 10px;text-align:center}
+.titulo{font-family:var(--titulo);font-weight:600;color:var(--texto);font-size:clamp(26px,3vw,36px);line-height:1.25;letter-spacing:-.01em;text-align:center;max-width:26ch;margin:0 auto 44px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--corpo);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:16px 30px;border:0;border-radius:2px;cursor:pointer;transition:background .2s,transform .2s,color .2s}
 .btn-azul{background:var(--azul);color:var(--branco)}
 .btn-azul:hover{background:var(--azul-escuro)}
@@ -105,23 +103,27 @@ section{position:relative}
 .hero h1,.hero .sub,.hero .local{text-shadow:0 2px 18px rgba(0,0,0,.35)}
 .hero .wrap{position:relative;text-align:center}
 .hero .local{font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 18px}
-.hero h1{font-family:var(--titulo);font-weight:500;font-size:clamp(40px,5vw,68px);line-height:1.06;margin:0 auto 20px;max-width:20ch}
-.hero .sub{font-family:var(--serif);font-size:clamp(20px,2.1vw,25px);line-height:1.45;margin:0 auto;max-width:44ch;opacity:.95}
+.hero h1{font-family:var(--titulo);font-weight:600;font-size:clamp(32px,4.4vw,58px);line-height:1.15;letter-spacing:-.015em;margin:0 auto 20px;max-width:20ch}
+.hero .sub{font-family:var(--corpo);font-size:clamp(17px,1.6vw,20px);line-height:1.6;margin:0 auto;max-width:44ch;opacity:.95}
 .btn-whats{background:#1f9e55;color:var(--branco)}
 .btn-whats:hover{background:#188548}
 .btn-whats svg{width:22px;height:22px;flex:0 0 22px}
+.btn .quebra{text-align:center;line-height:1.45}
+.pousada .olho,.onde .texto .olho{text-align:center}
+.onde .texto .endereco{text-align:center}
 .btn-grande{font-size:14px;padding:19px 32px;margin-top:30px;border-radius:4px;box-shadow:0 12px 30px rgba(0,0,0,.25)}
 .hero-nota{margin:14px 0 0;font-size:14px;opacity:.85}
 
 /* ---------- barra de reserva ---------- */
 .reserva{position:relative;z-index:5;margin-top:-90px}
 .reserva form{background:var(--branco);box-shadow:0 18px 50px rgba(11,61,94,.18);display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr auto;align-items:stretch}
-.reserva .chamada{display:flex;flex-direction:column;justify-content:center;padding:22px 26px;border-right:1px solid #e6e6e6}
-.reserva .chamada strong{font-family:var(--titulo);font-weight:600;font-size:24px;color:var(--azul);line-height:1.2}
-.reserva .chamada span{font-family:var(--serif);font-size:18px;color:var(--texto-suave)}
-.reserva label{display:flex;flex-direction:column;justify-content:center;padding:18px 22px;border-right:1px solid #e6e6e6;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul)}
-.reserva input,.reserva select{font-family:var(--corpo);font-size:16px;color:var(--texto);border:0;background:transparent;padding:6px 0 0;width:100%;outline:none;appearance:none;-webkit-appearance:none}
-.reserva select{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2300669e' stroke-width='1.6'/%3E%3C/svg%3E") right 2px center no-repeat;padding-right:20px;cursor:pointer}
+.reserva .chamada{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:22px 26px;border-right:1px solid #e6e6e6}
+.reserva .chamada strong{font-family:var(--titulo);font-weight:600;font-size:19px;color:var(--azul);line-height:1.2}
+.reserva .chamada span{font-family:var(--corpo);font-size:14px;color:var(--texto-suave)}
+.reserva label{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:18px 22px;border-right:1px solid #e6e6e6;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul)}
+.reserva input,.reserva select{font-family:var(--corpo);font-size:16px;color:var(--texto);border:0;background:transparent;padding:6px 0 0;width:100%;text-align:center;text-align-last:center;outline:none;appearance:none;-webkit-appearance:none}
+.reserva input::-webkit-date-and-time-value{text-align:center}
+.reserva select{padding-left:20px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2300669e' stroke-width='1.6'/%3E%3C/svg%3E") right 2px center no-repeat;padding-right:20px;cursor:pointer}
 .reserva .btn{border-radius:0;padding:0 34px;font-size:13px}
 .reserva label.erro{background:#fdf1f0;color:#b3261e}
 .aviso-reserva{margin:10px 0 0;min-height:1em;font-size:14px;font-weight:600;color:#b3261e;text-align:center}
@@ -129,9 +131,10 @@ section{position:relative}
 
 /* ---------- a pousada ---------- */
 .pousada{padding:120px 0 100px}
-.pousada .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
-.pousada p{margin:0 0 18px;color:var(--texto-suave)}
-.pousada .btn{margin-top:14px}
+.pousada-grade{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+.pousada-texto{display:flex;flex-direction:column}
+.pousada p{margin:0 0 18px;color:var(--texto-suave);text-align:justify;hyphens:auto}
+.pousada .btn{margin-top:14px;align-self:center}
 .mosaico{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:200px 150px 200px;gap:10px}
 .mosaico img{width:100%;height:100%;object-fit:cover}
 .mosaico img:nth-child(1){grid-row:1/3}
@@ -147,12 +150,10 @@ section{position:relative}
 .bloco::after{content:"";position:absolute;inset:0;background:rgba(11,61,94,.5);transition:background .4s}
 .bloco:hover img{transform:scale(1.06)}
 .bloco:hover::after{background:rgba(11,61,94,.35)}
-.bloco h3{position:relative;z-index:1;font-family:var(--serif);font-weight:500;font-size:clamp(26px,2.4vw,34px);line-height:1.2;margin:0;padding:0 20px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.bloco h3{position:relative;z-index:1;font-family:var(--titulo);font-weight:600;font-size:clamp(18px,1.7vw,22px);line-height:1.2;margin:0;padding:0 20px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
 
 /* ---------- conforto ---------- */
 .conforto{padding:70px 0}
-.conforto .wrap{display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:center}
-.conforto .titulo{font-size:24px;margin:0}
 .itens{display:grid;grid-template-columns:repeat(6,1fr)}
 .item{text-align:center;padding:6px 10px;border-left:1px solid #dcdcdc;font-size:13px;line-height:1.4;color:var(--texto-suave)}
 .item:first-child{border-left:0}
@@ -160,35 +161,35 @@ section{position:relative}
 
 /* ---------- acomodações ---------- */
 .acomodacoes{padding:90px 0 110px;background:var(--azul-claro)}
-.acomodacoes-topo{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center;margin:-6px 0 48px}
-.acomodacoes .intro{color:var(--texto-suave);margin:0;font-size:17px}
-.fotos-quartos{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:180px 180px;gap:8px}
+.acomodacoes-topo{margin:-20px 0 40px}
+.acomodacoes .intro{color:var(--texto-suave);margin:0 auto 32px;font-size:17px;max-width:720px;text-align:center}
+.fotos-quartos{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:220px 220px;gap:8px}
 .fotos-quartos img{width:100%;height:100%;object-fit:cover}
 .fotos-quartos .principal{grid-row:1/3;margin:0;position:relative}
 .fotos-quartos figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.94);color:var(--azul);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px}
 .acomodacoes .intro strong{color:var(--texto);font-weight:600}
 .quartos{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.quarto{background:var(--branco);padding:32px 30px 30px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(11,61,94,.07);border-top:3px solid var(--azul)}
-.quarto .cap{display:flex;align-items:baseline;gap:8px;color:var(--azul);margin-bottom:6px}
-.quarto .cap strong{font-family:var(--serif);font-weight:400;font-size:54px;line-height:1}
+.quarto{background:var(--branco);padding:32px 30px 30px;display:flex;flex-direction:column;text-align:center;box-shadow:0 10px 30px rgba(11,61,94,.07);border-top:3px solid var(--azul)}
+.quarto .cap{display:flex;align-items:baseline;justify-content:center;gap:8px;color:var(--azul);margin-bottom:6px}
+.quarto .cap strong{font-family:var(--titulo);font-weight:600;font-size:44px;line-height:1}
 .quarto .cap span{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.quarto h3{font-family:var(--titulo);font-weight:600;font-size:27px;line-height:1.15;margin:0 0 4px;color:var(--texto)}
-.quarto .numeros{margin:0 0 18px;font-family:var(--serif);font-style:italic;font-size:19px;color:var(--texto-suave)}
+.quarto h3{font-family:var(--titulo);font-weight:600;font-size:21px;line-height:1.3;margin:0 0 4px;color:var(--texto)}
+.quarto .numeros{margin:0 0 18px;font-family:var(--corpo);font-size:15px;color:var(--texto-suave)}
 .quarto ul{list-style:none;padding:18px 0 0;margin:0 0 26px;border-top:1px solid #e6e6e6;font-size:14.5px;color:var(--texto-suave)}
-.quarto li{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;line-height:1.45}
+.quarto li{display:flex;gap:10px;align-items:flex-start;justify-content:center;margin-bottom:10px;line-height:1.45}
 .quarto li svg,.conjugados svg{flex:0 0 20px;width:20px;height:20px;stroke:var(--azul);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.quarto .btn{margin-top:auto;align-self:flex-start;padding:14px 22px;font-size:12px}
+.quarto .btn{margin-top:auto;align-self:center;padding:14px 22px;font-size:12px}
 .quarto.destaque{background:var(--azul);color:var(--branco);border-top-color:var(--azul-escuro)}
 .quarto.destaque .cap,.quarto.destaque h3,.quarto.destaque .numeros,.quarto.destaque ul{color:var(--branco)}
 .quarto.destaque ul{border-top-color:rgba(255,255,255,.3)}
 .quarto.destaque li svg{stroke:var(--branco)}
 .quarto.destaque .btn{background:var(--branco);color:var(--azul)}
 .quarto.destaque .btn:hover{background:var(--areia)}
-.conjugados{margin-top:24px;background:var(--branco);padding:28px 32px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;box-shadow:0 10px 30px rgba(11,61,94,.07)}
+.conjugados{margin-top:24px;background:var(--branco);padding:32px;display:grid;grid-template-columns:1fr;justify-items:center;text-align:center;gap:16px;align-items:center;box-shadow:0 10px 30px rgba(11,61,94,.07)}
 .conjugados .icone{width:56px;height:56px;border-radius:50%;background:var(--azul-claro);display:flex;align-items:center;justify-content:center}
 .conjugados .icone svg{width:26px;height:26px;flex-basis:26px}
-.conjugados h3{font-family:var(--serif);font-weight:600;font-size:28px;color:var(--azul);margin:0 0 4px;line-height:1.25}
-.conjugados p{margin:0;color:var(--texto-suave);font-size:15px}
+.conjugados h3{font-family:var(--titulo);font-weight:600;font-size:20px;color:var(--azul);margin:0 0 4px;line-height:1.25}
+.conjugados p{margin:0 auto;color:var(--texto-suave);font-size:15px;max-width:620px}
 
 /* ---------- serviços ---------- */
 .servicos{padding:110px 0 90px}
@@ -196,15 +197,15 @@ section{position:relative}
 .servico{grid-column:span 2;display:flex;flex-direction:column}
 .servico:nth-child(4){grid-column:2/span 2}
 .servico img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.servico .corpo{padding:24px 4px 0}
-.servico h3{font-family:var(--serif);font-weight:600;font-size:30px;color:var(--azul);margin:0 0 8px;line-height:1.2}
+.servico .corpo{padding:24px 4px 0;text-align:center}
+.servico h3{font-family:var(--titulo);font-weight:600;font-size:20px;color:var(--azul);margin:0 0 8px;line-height:1.2}
 .servico p{margin:0;color:var(--texto-suave);font-size:15px}
 
 /* ---------- onde estamos ---------- */
 .onde{padding:40px 0 120px}
 .onde .caixa{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;max-width:1280px;margin:0 auto}
 .onde .texto{background:var(--branco);padding:64px 56px;box-shadow:0 18px 50px rgba(11,61,94,.12);margin:60px -60px 60px 24px;position:relative;z-index:1;text-align:center}
-.onde .texto p{color:var(--texto-suave);text-align:left;margin:0 0 16px}
+.onde .texto p{color:var(--texto-suave);text-align:justify;hyphens:auto;margin:0 0 16px}
 .onde .texto .btn{margin-top:14px}
 .onde .mapa{min-height:520px;background:var(--azul-claro)}
 .onde iframe{width:100%;height:100%;min-height:520px;border:0;display:block}
@@ -215,13 +216,12 @@ section{position:relative}
 .atracoes-grade{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .atracao{background:var(--branco);display:flex;flex-direction:column}
 .atracao img{width:100%;aspect-ratio:1/1;object-fit:cover}
-.atracao .corpo{padding:22px 22px 26px}
-.atracao h3{font-family:var(--titulo);font-weight:600;font-size:24px;line-height:1.2;margin:0 0 10px}
+.atracao .corpo{padding:22px 22px 26px;text-align:center}
+.atracao h3{font-family:var(--titulo);font-weight:600;font-size:18px;line-height:1.3;margin:0 0 10px}
 .atracao p{margin:0;font-size:14.5px;color:var(--texto-suave)}
 
 /* ---------- galeria ---------- */
 .galeria{padding:100px 0 90px}
-.galeria .titulo-linha{flex-direction:row-reverse}
 .fotos{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .fotos a{display:block;overflow:hidden;aspect-ratio:1/1.2}
 .fotos img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
@@ -233,8 +233,8 @@ section{position:relative}
 .chamada-reserva{padding:120px 0;color:var(--branco);text-align:center;background:#1d2a33 url(imagens/mural.webp) center 60%/cover no-repeat}
 .chamada-reserva::before{content:"";position:absolute;inset:0;background:rgba(6,30,48,.62)}
 .chamada-reserva .wrap{position:relative}
-.chamada-reserva h2{font-family:var(--titulo);font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.1;line-height:1.2;margin:0 auto 14px;max-width:22ch}
-.chamada-reserva p{font-family:var(--serif);font-size:23px;margin:0 0 4px}
+.chamada-reserva h2{font-family:var(--titulo);font-weight:600;font-size:clamp(26px,3.4vw,40px);line-height:1.25;margin:0 auto 14px;max-width:22ch}
+.chamada-reserva p{font-family:var(--corpo);font-size:18px;margin:0 0 4px}
 
 /* ---------- depoimentos ---------- */
 .depoimentos{padding:110px 0 100px;text-align:center;overflow:hidden}
@@ -255,8 +255,8 @@ section{position:relative}
 .todas-avaliacoes{margin-top:36px}
 
 /* ---------- filtro de quartos ---------- */
-.filtro-quartos{display:flex;justify-content:space-between;align-items:center;gap:16px 24px;flex-wrap:wrap;margin:0 0 28px}
-.perfis{display:flex;gap:8px;flex-wrap:wrap}
+.filtro-quartos{display:flex;flex-direction:column;align-items:center;gap:16px;margin:0 0 32px;text-align:center}
+.perfis{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
 .perfis button{font:700 12px var(--corpo);letter-spacing:.12em;text-transform:uppercase;padding:12px 20px;border:1px solid var(--azul);background:var(--branco);color:var(--azul);cursor:pointer;transition:background .2s,color .2s}
 .perfis button:hover{background:var(--azul-claro)}
 .perfis button.ativo{background:var(--azul);color:var(--branco)}
@@ -266,9 +266,9 @@ section{position:relative}
 
 /* ---------- dúvidas ---------- */
 .faq{padding:100px 0;background:var(--azul-claro)}
-.perguntas{max-width:820px}
+.perguntas{max-width:820px;margin:0 auto}
 .pergunta{background:var(--branco);margin-bottom:10px;box-shadow:0 6px 18px rgba(11,61,94,.05)}
-.pergunta summary{cursor:pointer;list-style:none;position:relative;padding:20px 60px 20px 24px;font-family:var(--serif);font-weight:600;font-size:22px;line-height:1.25;color:var(--texto)}
+.pergunta summary{cursor:pointer;list-style:none;position:relative;padding:20px 60px 20px 24px;font-family:var(--titulo);font-weight:500;font-size:17px;line-height:1.4;color:var(--texto)}
 .pergunta summary::-webkit-details-marker{display:none}
 .pergunta summary::after{content:"+";position:absolute;right:24px;top:50%;transform:translateY(-50%);font-family:var(--corpo);font-size:24px;color:var(--azul)}
 .pergunta[open] summary::after{content:"–"}
@@ -286,16 +286,16 @@ section{position:relative}
 
 /* ---------- rodapé ---------- */
 .rodape{background:var(--azul);color:var(--branco);padding:70px 0 0}
-.rodape .grade{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:50px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.2)}
+.rodape .grade{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:50px;text-align:center;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.2)}
 .rodape img{height:64px;width:auto;margin-bottom:18px}
 .rodape p{margin:0;font-size:14.5px;opacity:.9}
 .rodape h4{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:6px 0 18px}
 .rodape ul{list-style:none;margin:0;padding:0;font-size:14.5px}
-.rodape li{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
+.rodape li{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start;justify-content:center}
 .rodape li svg{flex:0 0 18px;width:18px;height:18px;margin-top:3px}
 .rodape a{text-decoration:none;opacity:.9}
 .rodape a:hover{opacity:1;text-decoration:underline}
-.redes{display:flex;gap:12px;margin-top:20px}
+.redes{display:flex;gap:12px;margin-top:20px;justify-content:center}
 .redes a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;opacity:1}
 .redes a:hover{background:var(--branco);color:var(--azul);text-decoration:none}
 .redes svg{width:18px;height:18px}
@@ -315,10 +315,9 @@ section{position:relative}
 @media (max-width:1080px){
   .menu{gap:20px}
   .reserva form{grid-template-columns:1fr 1fr 1fr}
-  .reserva .chamada{grid-column:1/-1;border-right:0;border-bottom:1px solid #e6e6e6;flex-direction:row;align-items:baseline;gap:12px;padding:16px 22px}
+  .reserva .chamada{grid-column:1/-1;border-right:0;border-bottom:1px solid #e6e6e6;flex-direction:row;justify-content:center;align-items:baseline;gap:12px;padding:16px 22px}
   .reserva .btn{grid-column:1/-1;padding:18px}
   .reserva label:nth-of-type(3){border-right:0}
-  .conforto .wrap{grid-template-columns:1fr;text-align:center}
   .itens{grid-template-columns:repeat(3,1fr);row-gap:26px}
   .item:nth-child(4){border-left:0}
   .atracoes-grade{grid-template-columns:repeat(2,1fr)}
@@ -339,12 +338,9 @@ section{position:relative}
   .menu-aberto .abre-menu span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .menu-aberto .abre-menu span:nth-child(2){opacity:0}
   .menu-aberto .abre-menu span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-  .pousada .wrap{grid-template-columns:1fr;gap:44px}
+  .pousada-grade{grid-template-columns:1fr;gap:44px}
   .blocos{grid-template-columns:repeat(2,1fr)}
   .quartos{grid-template-columns:1fr 1fr}
-  .acomodacoes-topo{grid-template-columns:1fr;gap:28px}
-  .conjugados{grid-template-columns:auto 1fr}
-  .conjugados .btn{grid-column:1/-1;justify-self:start}
   .servicos-grade{grid-template-columns:1fr 1fr}
   .servico,.servico:nth-child(4){grid-column:auto}
   .servico:nth-child(5){grid-column:1/-1;max-width:calc(50% - 12px);justify-self:center}
@@ -362,7 +358,9 @@ section{position:relative}
   .hero{padding:110px 0 150px}
   .reserva{margin-top:-80px}
   .reserva form{grid-template-columns:1fr 1fr}
-  .reserva .chamada{flex-direction:column;gap:0}
+  .reserva .chamada{flex-direction:column;align-items:center;gap:0}
+  .perfis button{padding:11px 14px;letter-spacing:.08em}
+  .pet-nota{flex-direction:column;gap:6px;text-align:center}
   .reserva label{padding:14px 18px}
   .reserva label:nth-of-type(2){border-right:0}
   .reserva label:nth-of-type(3){grid-column:1/-1;border-top:1px solid #e6e6e6}
@@ -378,12 +376,11 @@ section{position:relative}
   .fotos-quartos{grid-template-columns:1fr 1fr;grid-template-rows:220px 130px 130px}
   .fotos-quartos .principal{grid-row:auto;grid-column:1/-1}
   .quarto{padding:28px 22px 26px}
-  .conjugados{grid-template-columns:1fr;padding:26px 22px;gap:16px}
+  .conjugados{padding:26px 22px}
   .servico:nth-child(5){max-width:none}
   .onde .texto{margin:0 0 -30px;padding:40px 22px}
   .atracoes-grade{grid-template-columns:1fr}
   .depo{flex-basis:100%;padding:0 6px}
-  .titulo-linha::after{display:none}
   .whats-flutuante{right:16px;bottom:16px;width:56px;height:56px}
 }
 </style>
@@ -448,7 +445,8 @@ section{position:relative}
 
   <section class="conforto">
     <div class="wrap">
-      <h2 class="titulo surge">Tudo para o seu conforto</h2>
+      <p class="olho">Comodidades</p>
+      <h2 class="titulo">Tudo para o seu conforto</h2>
       <div class="itens surge">
         <div class="item"><svg viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3v3M12 3v3"/></svg>Café da manhã incluso</div>
         <div class="item"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>Estacionamento gratuito</div>
@@ -463,7 +461,7 @@ section{position:relative}
   <section class="acomodacoes" id="acomodacoes">
     <div class="wrap">
       <p class="olho">Acomodações</p>
-      <h2 class="titulo titulo-linha">Nossos quartos</h2>
+      <h2 class="titulo">Nossos quartos</h2>
       <div class="acomodacoes-topo">
         <p class="intro">São 9 quartos, para 2 a 8 pessoas, no térreo e no andar superior — vários com cozinha compacta, para você ficar à vontade como em casa. <strong>Todos têm ar-condicionado, Smart TV e kit de banho.</strong></p>
         <div class="fotos-quartos">
@@ -540,9 +538,10 @@ section{position:relative}
 
   <section class="pousada" id="pousada">
     <div class="wrap">
-      <div class="surge">
-        <p class="olho">A Pousada</p>
-        <h2 class="titulo">Na Areias do Peró você se sente em casa, pertinho da praia</h2>
+      <p class="olho">A Pousada</p>
+      <h2 class="titulo">Na Areias do Peró você se sente em casa, pertinho da praia</h2>
+      <div class="pousada-grade">
+      <div class="pousada-texto surge">
         <p>A Pousada Areias do Peró nasceu para ser mais do que um lugar de descanso: é um refúgio acolhedor, a poucos passos da Praia do Peró, em Cabo Frio – Rio de Janeiro.</p>
         <p>Nossa proposta é unir a simplicidade verdadeira ao conforto de um lar, oferecendo um atendimento próximo, familiar e cheio de carinho, aliado a uma estrutura pensada com atenção à acessibilidade.</p>
         <p>Com inspiração no charme rústico do litoral, nossos ambientes combinam aconchego, arte e descontração. A decoração leva a assinatura criativa do artista Fábio Gomes Trindade, que traz ainda mais identidade e beleza aos espaços.</p>
@@ -556,12 +555,14 @@ section{position:relative}
         <img src="imagens/varanda-superior.webp" srcset="imagens/varanda-superior-800.webp 800w, imagens/varanda-superior.webp 1200w" sizes="(max-width: 900px) 100vw, 50vw" alt="Varanda do andar superior com guarda-corpo azul" loading="lazy">
         <img src="imagens/casal-varanda.webp" srcset="imagens/casal-varanda-800.webp 800w, imagens/casal-varanda.webp 1400w" sizes="(max-width: 900px) 100vw, 50vw" alt="Casal abraçado na varanda do andar superior" loading="lazy">
       </div>
+      </div>
     </div>
   </section>
 
   <section class="destaques">
     <div class="wrap">
-      <h2 class="titulo surge">Sua pousada no Peró, Cabo Frio</h2>
+      <p class="olho">Diferenciais</p>
+      <h2 class="titulo">Sua pousada no Peró, Cabo Frio</h2>
     </div>
     <div class="blocos">
       <a class="bloco" href="#localizacao"><img src="imagens/ilha-do-japones.webp" srcset="imagens/ilha-do-japones-800.webp 800w, imagens/ilha-do-japones.webp 1200w" sizes="(max-width: 900px) 100vw, 50vw" alt="" loading="lazy"><h3>A 500 metros da praia</h3></a>
@@ -574,7 +575,7 @@ section{position:relative}
   <section class="servicos" id="servicos">
     <div class="wrap">
       <p class="olho">Serviços</p>
-      <h2 class="titulo titulo-linha">Cuidados que fazem a diferença</h2>
+      <h2 class="titulo">Cuidados que fazem a diferença</h2>
       <div class="servicos-grade">
         <article class="servico surge">
           <img src="imagens/sucos.webp" srcset="imagens/sucos-800.webp 800w, imagens/sucos.webp 1100w" sizes="(max-width: 900px) 100vw, 50vw" alt="Jarras de suco de goiaba e maracujá no café da manhã" loading="lazy">
@@ -619,7 +620,7 @@ section{position:relative}
   <section class="atracoes" id="atracoes">
     <div class="wrap">
       <p class="olho">Atrações</p>
-      <h2 class="titulo titulo-linha">Para curtir por perto</h2>
+      <h2 class="titulo">Para curtir por perto</h2>
       <div class="atracoes-grade">
         <article class="atracao surge"><img src="imagens/ilha-do-japones.webp" srcset="imagens/ilha-do-japones-800.webp 800w, imagens/ilha-do-japones.webp 1200w" sizes="(max-width: 900px) 100vw, 50vw" alt="Vista aérea da Ilha do Japonês" loading="lazy"><div class="corpo"><h3>Ilha do Japonês</h3><p>Um paraíso de águas calmas e rasas, ideal para relaxar ou praticar stand up paddle. A travessia é rápida e garante contato direto com a natureza em um cenário inesquecível.</p></div></article>
         <article class="atracao surge"><img src="imagens/morro-do-vigia.webp" srcset="imagens/morro-do-vigia-800.webp 800w, imagens/morro-do-vigia.webp 1280w" sizes="(max-width: 900px) 100vw, 50vw" alt="Vista do alto do Morro do Vigia" loading="lazy"><div class="corpo"><h3>Morro do Vigia</h3><p>Localizado entre a Praia do Peró e a Praia das Conchas, o Morro do Vigia é acessado por uma trilha curta e moderada.</p></div></article>
@@ -631,7 +632,8 @@ section{position:relative}
 
   <section class="galeria" id="fotos">
     <div class="wrap">
-      <h2 class="titulo titulo-linha">Siga-nos no Instagram</h2>
+      <p class="olho">Fotos</p>
+      <h2 class="titulo">Siga-nos no Instagram</h2>
       <div class="fotos">
         <a href="https://www.instagram.com/areiasdoperooficial/" target="_blank" rel="noopener"><img src="imagens/casal-escada.webp" srcset="imagens/casal-escada-800.webp 800w, imagens/casal-escada.webp 1000w" sizes="(max-width: 900px) 100vw, 50vw" alt="Casal na escada azul da pousada" loading="lazy"></a>
         <a href="https://www.instagram.com/areiasdoperooficial/" target="_blank" rel="noopener"><img src="imagens/cesta-paes.webp" srcset="imagens/cesta-paes-800.webp 800w, imagens/cesta-paes.webp 1100w" sizes="(max-width: 900px) 100vw, 50vw" alt="Pães e bolos do café da manhã" loading="lazy"></a>
@@ -701,7 +703,7 @@ section{position:relative}
     <div class="wrap">
       <h2>Garanta sua estadia pertinho da Praia do Peró</h2>
       <p>Fale direto com a gente e consulte datas e valores.</p>
-      <a class="btn btn-whats btn-grande" href="#reservar" data-whats="Olá! Vim pelo site e gostaria de consultar datas e valores na Pousada Areias do Peró." data-origem="final"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>Consultar disponibilidade e valores</a>
+      <a class="btn btn-whats btn-grande" href="#reservar" data-whats="Olá! Vim pelo site e gostaria de consultar datas e valores na Pousada Areias do Peró." data-origem="final"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg><span class="quebra">Consultar disponibilidade<br>e valores</span></a>
     </div>
   </section>
 
